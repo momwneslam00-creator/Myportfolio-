@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islam Momen | Frontend Developer</title>
+  <meta name="description" content="Islam Momen is a Frontend Developer building responsive, user-focused web applications with React, Next.js and Tailwind CSS.">
+  <meta name="author" content="Islam Momen">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Islam Momen | Frontend Developer">
+  <meta property="og:description" content="Building modern, responsive, and user-focused web experiences.">
+  <meta name="theme-color" content="#3b5bff">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b5bff'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>IM</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Islam Momen</a>
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                  aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="hero-role">Frontend Developer</p>
+            <h1 id="hero-title">Islam Momen</h1>
+            <p class="hero-headline">Building modern, responsive, and user-focused web experiences.</p>
+            <p class="hero-copy">I build interfaces with React, Next.js and Tailwind CSS, connect them to REST APIs, and care about code that stays easy to read and maintain. I'm looking for internships, freelance work and junior frontend roles.</p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn btn-accent">View My Work</a>
+              <a href="#contact" class="btn btn-outline-accent">Contact Me</a>
+              <a href="assets/Islam_Momen_CV.pdf" class="btn btn-ghost" download="Islam_Momen_CV.pdf">
+                <i class="bi bi-download" aria-hidden="true"></i> Download CV
+              </a>
+            </div>
+
+            <div class="hero-social" aria-label="Social links">
+              <a href="https://github.com/momwneslam00-creator" target="_blank" rel="noopener" aria-label="Islam Momen on GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/islam-momen" target="_blank" rel="noopener" aria-label="Islam Momen on LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:islammomen868@gmail.com" aria-label="Email Islam Momen"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <figure class="hero-photo">
+              <img src="assets/profile.jpg" width="660" height="660" alt="Portrait of Islam Momen, Frontend Developer" fetchpriority="high">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 reveal">
+            <h2 id="about-title" class="section-title">About me</h2>
+            
+          </div>
+          <div class="col-lg-8 reveal">
+            <p class="lead-text">I'm a Front-End Developer and software engineering enthusiast with a focus on the React ecosystem and modern web architecture. I design intuitive, responsive, cross-browser interfaces and integrate dynamic APIs, with an emphasis on clean, maintainable code and user-centric design.</p>
+            <p>I enjoy building modern web applications, improving my frontend skills every week, and turning ideas and designs into polished, working products. Alongside frontend, I'm studying automation testing, which helps me think about quality while I build.</p>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="reveal mb-5">
+          <h2 id="skills-title" class="section-title">Skills</h2>
+          <p class="section-sub">The tools I use to build and ship interfaces.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="skill-group">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li><i class="bi bi-filetype-html" aria-hidden="true"></i> HTML5</li>
+                <li><i class="bi bi-filetype-css" aria-hidden="true"></i> CSS3</li>
+                <li><i class="bi bi-filetype-js" aria-hidden="true"></i> JavaScript (ES6+)</li>
+                <li><i class="bi bi-phone" aria-hidden="true"></i> Responsive Web Design</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="skill-group">
+              <h3>Frameworks &amp; Libraries</h3>
+              <ul class="skill-list">
+                <li><i class="bi bi-braces" aria-hidden="true"></i> React.js</li>
+                <li><i class="bi bi-layers" aria-hidden="true"></i> Next.js</li>
+                <li><i class="bi bi-wind" aria-hidden="true"></i> Tailwind CSS</li>
+                <li><i class="bi bi-vector-pen" aria-hidden="true"></i> UI/UX Principles</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="skill-group">
+              <h3>Tools &amp; Workflow</h3>
+              <ul class="skill-list">
+                <li><i class="bi bi-git" aria-hidden="true"></i> Git &amp; GitHub</li>
+                <li><i class="bi bi-plug" aria-hidden="true"></i> REST API Integration</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="skill-group">
+              <h3>Other Skills</h3>
+              <ul class="skill-list">
+                
+                <li><i class="bi bi-chat-dots" aria-hidden="true"></i> Communication</li>
+                <li><i class="bi bi-people" aria-hidden="true"></i> Team Collaboration</li>
+                <li><i class="bi bi-puzzle" aria-hidden="true"></i> Problem Solving</li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> Time Management</li>
+                <li><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Adaptability</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="reveal mb-5">
+          <h2 id="projects-title" class="section-title">Projects</h2>
+          <p class="section-sub">Selected work. More projects will be added as I build them.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="project-card">
+              <div class="project-preview preview-space" role="img" aria-label="Preview of the Space Explorer project">
+                <img src="assets/space-explorer.jpg" alt="Space Explorer dashboard showing the NASA picture of the day" loading="lazy">
+                
+               
+                <span class="project-preview-label text-white">Space Explorer</span>
+              </div>
+              <div class="project-body">
+                <h3>Space Explorer</h3>
+                <p>A React web application that presents information about planets and space, with a clean, responsive UI and well-organized data.</p>
+                <ul class="tags" aria-label="Technologies used"><li>React</li><li>JavaScript</li><li>CSS</li><li>Responsive UI</li></ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://momwneslam00-creator.github.io/islam-momen---mon-thrus---assignment-11-and-01144891013/">
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live Demo
+                  </a>
+                  <!-- TODO: replace with the exact repository link for this project -->
+                  <a class="btn btn-outline-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://github.com/momwneslam00-creator">
+                    <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="project-card">
+              <div class="project-preview preview-nutri" role="img" aria-label="Preview of the NutriPlan project">
+                  <img src="assets/nutriplan.jpg" alt="NutriPlan meals and recipes page" loading="lazy">
+                <!-- <div class="plate"></div> -->
+                
+                <span class="project-preview-label text-black">NutriPlan</span>
+              </div>
+              <div class="project-body">
+                <h3>NutriPlan</h3>
+                <p>A food, nutrition and fitness planner. Browse recipes, search packaged products with Nutri-Score filters, and log daily meals against calorie and macro targets.</p>
+                <ul class="tags" aria-label="Technologies used"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://momwneslam00-creator.github.io/Islam-Momen---Mon-Thrus-9PM-online--Js-EXAM/">
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live Demo
+                  </a>
+                  <!-- TODO: replace with the exact repository link for this project -->
+                  <a class="btn btn-outline-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://github.com/momwneslam00-creator">
+                    <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="project-card">
+              <div class="project-preview preview-blog" role="img" aria-label="Preview of the Adasa photography blog">
+                <img src="assets/adasa.jpg" alt="Adasa Arabic photography blog home page" loading="lazy">
+                <!-- <div class="lens"></div> -->
+                <span class="project-preview-label text-white">Adasa</span>
+              </div>
+              <div class="project-body">
+                <h3>Adasa <span lang="ar">(عدسة)</span> Photography Blog</h3>
+                <p>An Arabic photography blog sharing practical tips and advice for improving photography skills.</p>
+                <ul class="tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li></ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://momwneslam00-creator.github.io/adasa-blog/">
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live Demo
+                  </a>
+                  <!-- TODO: replace with the exact repository link for this project -->
+                  <a class="btn btn-outline-accent btn-sm" target="_blank" rel="noopener"
+                     href="https://github.com/momwneslam00-creator">
+                    <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="section section-alt" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="reveal mb-5">
+          <h2 id="courses-title" class="section-title">Courses</h2>
+        </div>
+
+        <ol class="timeline">
+         
+          <li class="reveal">
+            <time>April 2026 – November 2026</time>
+            <h3>Front-End Web Development</h3>
+            <p class="muted">Route Academy</p>
+            <ul class="detail-list">
+              <li>HTML5, CSS3 and JavaScript (ES6+)</li>
+              <li>React and component-driven development</li>
+              <li>Responsive web development and REST API integration</li>
+              <li>Clean code and building end-to-end web applications</li>
+            </ul>
+          </li>
+          <li class="reveal">
+            <time>July 2026 – April 2027</time>
+            <h3>Automation Testing</h3>
+            <p class="muted">Digital Egypt Pioneers Initiative (DEPI)</p>
+            <ul class="detail-list">
+              <li>Selenium WebDriver and Cypress</li>
+              <li>Automated and regression testing</li>
+              <li>Test case design and bug reporting</li>
+              <li>Quality assurance life cycle</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="reveal mb-5">
+          <h2 id="edu-title" class="section-title">Education</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <time>2025 – 2029</time>
+            <h3>B.Sc. in Computer Science</h3>
+            <p class="muted">Al-Azhar University, Faculty of Computers and Information Sciences</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 reveal">
+            <h2 id="contact-title" class="section-title">Contact</h2>
+            <p class="section-sub">Have a role or a project in mind? Send me a message.</p>
+            <ul class="contact-list">
+              <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:islammomen868@gmail.com">islammomen868@gmail.com</a></li>
+              <li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+201144891013">01144891013</a></li>
+              <li><i class="bi bi-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/islam-momen" target="_blank" rel="noopener">linkedin.com/in/islam-momen</a></li>
+              <li><i class="bi bi-github" aria-hidden="true"></i> <a href="https://github.com/momwneslam00-creator" target="_blank" rel="noopener">github.com/momwneslam00-creator</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <!--
+              No backend yet. To make this form send email, set the action to a service endpoint
+              (for example Formspree: https://formspree.io/f/YOUR_ID) and remove the JS in js/main.js
+              that handles #contactForm. Until then it opens the visitor's email app with the message filled in.
+            -->
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent">Send Message</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <div>
+        <strong>Islam Momen</strong>
+        <span class="muted d-block">Frontend Developer</span>
+      </div>
+      <div class="hero-social" aria-label="Footer social links">
+        <a href="https://github.com/momwneslam00-creator" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/islam-momen" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:islammomen868@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <small class="muted">&copy; <span id="year">2026</span> Islam Momen. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
